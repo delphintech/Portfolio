@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 export default function Navbar() {
 
     return (
@@ -5,7 +7,7 @@ export default function Navbar() {
       <div className="container">
         <a href="" className="navbar-brand">DelphinTech</a>
         <button className="navbar-toggler" data-toggle="collapse" data-target="#main-navbar" aria-expanded="true">
-          <span className="ti-menu"></span>
+          <FontAwesomeIcon icon="fas fa-bars" />
         </button>
         <div className="collapse navbar-collapse" id="main-navbar">
           <ul className="navbar-nav ml-auto">
@@ -25,11 +27,11 @@ export default function Navbar() {
               <a href="#contact" className="nav-link" data-animate="scrolling">Contact</a>
             </li>
           </ul>
-          <ul className="nav ml-auto">
+          {/* <ul className="nav ml-auto">
             <li className="nav-item">
               <button className="btn btn-fab btn-theme no-shadow">En</button>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </div>
