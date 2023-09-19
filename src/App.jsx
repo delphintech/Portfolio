@@ -1,12 +1,16 @@
 import Navbar from "./components/Navbar"
-import './App.scss'
+import Landing from "./components/Landing"
+import './assets/style/index.scss'
 
 function App() {
 
 
   return (
     <>
-    <Navbar />
+      <Navbar />
+      <div className="vg-main-wrapper">
+        {/* <Landing /> */}
+      </div>
     </>
   )
 }
