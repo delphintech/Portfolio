@@ -1,0 +1,99 @@
+.divider {
+  display: block;
+  margin: -5px 0 16px 0;
+  max-width: 150px;
+  border-bottom: 2px dashed #9FA2AB;
+}
+
+.badge-subhead {
+  margin-bottom: 8px;
+  padding: 10px 30px;
+  background-color: rgba(116, 116, 116, 0.15);
+  color: #747474;
+  font-size: 14px;
+  border-radius: 40px;
+}
+
+.bg-theme {
+  background-color: #ef3724 !important;
+}
+
+.fg-theme {
+    color: #EF3724 !important;
+}
+
+.btn-theme {
+  background-color: #EF3724;
+  color: #fff;
+
+  &:hover {
+      background-color: #F04936;
+      color: #fff;
+  }
+
+  &:focus {
+      box-shadow: 0 0 0 3px #fff, 0 0 0 5px #EF3724;
+  }
+}
+
+
+.btn-theme-outline {
+  color: #EF3724;
+  box-shadow: 0 0 0 2px #EF3724;
+
+  &:hover {
+      background-color: #EF3724;
+      color: #fff;
+  }
+
+  &:focus {
+      background-color: #EF3724;
+      color: #fff;
+      box-shadow: 0 0 0 3px #fff, 0 0 0 5px #EF3724;
+  }
+}
+
+
+.btn-fab {
+  background-color: #EF3724;
+  color: #fff;
+  &:hover {
+      background-color: #F04936;
+      color: #fff;
+  }
+}
+
+.progress {
+    box-shadow: 0 0 0 2px #EF3724;
+}
+
+.progress-bar {
+    background-color: #EF3724;
+}
+
+.theme-list li::before {
+    border-color: #EF3724;
+}
+
+
+// ----------------------------------------------
+
+.filterable-button .btn.selected,
+.filterable-button .btn:focus {
+  background-color: #EF3724;
+  color: #fff;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #EF3724;
+}
+
+.page-about .img-place::before {
+  border-color: #EF3724;
+}
+
+.timeline li:first-child .title {
+  background-color: #EF3724;
+}
+
+.timeline li:first-child::before {
+  background-color: #EF3724;
+  box-shadow: 0 0 0 2px #EF3724;
+}
