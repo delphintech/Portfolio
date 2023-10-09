@@ -10,13 +10,13 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="main-navbar">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a href="#home" className="nav-link" data-animate="scrolling">Home</a>
+              <a href="#home" className="nav-link" data-animate="scrolling">Accueil</a>
             </li>
             <li className="nav-item">
-              <a href="#about" className="nav-link" data-animate="scrolling">About</a>
+              <a href="#about" className="nav-link" data-animate="scrolling">A propos</a>
             </li>
             <li className="nav-item">
-              <a href="#resume" className="nav-link" data-animate="scrolling">Resume</a>
+              <a href="#resume" className="nav-link" data-animate="scrolling">Curriculum</a>
             </li>
             <li className="nav-item">
               <a href="#portfolio" className="nav-link" data-animate="scrolling">Portfolio</a>
@@ -28,6 +28,5 @@ export default function Navbar() {
         </div>
       </div>
     </nav>
-
   )
 }

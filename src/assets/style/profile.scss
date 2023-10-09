@@ -1,7 +1,11 @@
 .page-about {
   background-color: #fff;
 }
-
+  .picture {
+    display: flex;
+    align-items: center;
+  }
+  
   .img-place {
     position: relative;
     display: block;
@@ -13,6 +17,7 @@
     height: 350px;
     background-color: #dfe0e6;
     overflow: unset;
+
     &:before {
       content: "";
       position: absolute;

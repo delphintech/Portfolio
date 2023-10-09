@@ -11,7 +11,8 @@ export default function Portfolio() {
     <div className="page-portfolio">
       <div className="container">
         <div className="text-center wow fadeInUp">
-          <h1 className="text-center fw-normal wow fadeInUp">See my work</h1>
+          <div className="badge badge-subhead">Portfolio</div>
+          <h1 className="fw-normal wow fadeInUp">Mes projets</h1>
         </div>
         {/* <div className="filterable-button py-3 wow fadeInUp" data-toggle="selected">
           <button className="btn btn-theme-outline selected" data-filter="*">All</button>

@@ -1,30 +1,30 @@
 export default function Skills() {
   return (
     <div className="page-service">
-      <div className="container py-5">
+      <div className="container pt-5">
         <div className="text-center wow fadeInUp">
-          <h1 className="text-center fw-normal wow fadeIn">My Skills</h1>
-          {/* <div className="badge badge-subhead">Service</div> */}
+          {/* <div className="badge badge-subhead">Programmation</div> */}
+          <h1 className="text-center fw-normal wow fadeIn">Compétences</h1>
         </div>
         <div className="row mt-5">
           <div className="col-md-6 col-lg-4 col-xl-3">
             <div className="card card-service wow fadeInUp">
               <div className="icon">
-                <span className="ti-paint-bucket"></span>
+                <i className="icon-ruby-on-rails"></i>
               </div>
               <div className="caption">
-                <h4 className="fg-theme">Web Design</h4>
-                <p>There are many variations of passages of Lorem Ipsum available</p>
+                <h4 className="fg-theme">Ruby on Rails</h4>
+                <p>Full Stack Framework</p>
               </div>
             </div>
           </div>
           <div className="col-md-6 col-lg-4 col-xl-3">
             <div className="card card-service wow fadeInUp">
               <div className="icon">
-                <span className="ti-search"></span>
+                <i className="icon-reactjs"></i>
               </div>
               <div className="caption">
-                <h4 className="fg-theme">SEO</h4>
+                <h4 className="fg-theme">React JS</h4>
                 <p>There are many variations of passages of Lorem Ipsum available</p>
               </div>
             </div>

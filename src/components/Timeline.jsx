@@ -1,6 +1,10 @@
 export default function Timeline() {
   return (
-    <div className="container pt-5">
+    <div className="container">
+        <div className="text-center pb-5 wow fadeInUp">
+          <div className="badge badge-subhead">Curriculum</div>
+          <h1 className="fw-normal wow fadeIn">Expériences & formations</h1>
+        </div>
       <div className="row">
         <div className="col-md-6 wow fadeInRight">
           <h2 className="fw-normal">Education</h2>
