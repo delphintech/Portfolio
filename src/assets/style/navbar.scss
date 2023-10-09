@@ -1,8 +1,8 @@
 @import '../fonts/font.scss';
 
 .navbar {
-  position: absolute;
-  top: auto;
+  // position: absolute;
+  top: 15px;
   left: 0;
   width: 100%;
   padding-top: 6px;
@@ -16,47 +16,45 @@
   }
 }
 
-.sticky {
-    top: 0;
-    z-index: 999;
-}
-
 .navbar-brand {
-    font-weight: 700;
-    font-size: 1.5rem;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    font-family: "LTAzer" !important;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: "LTAzer" !important;
 }
 
 .navbar-nav .nav-link {
-    padding: 14px 10px;
+  padding: 14px 10px;
+  .active {
+    color: #fff;
+  }
 }
 
 @media (min-width: 576px) {
-    .navbar-expand-sm .navbar-nav .nav-link {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }
 
 @media (min-width: 768px) {
-    .navbar-expand-md .navbar-nav .nav-link {
-        padding-left: 14px;
-        padding-right: 14px;
-    }
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
 }
 
 @media (min-width: 992px) {
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 @media (min-width: 1200px) {
-    .navbar-expand-xl .navbar-nav .nav-link {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+  .navbar-expand-xl .navbar-nav .nav-link {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }

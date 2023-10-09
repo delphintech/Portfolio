@@ -1,0 +1,42 @@
+.vg-footer {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 50px 0;
+  background-color: #171925;
+  color: #9FA2AB;
+
+  .list-unstyled{
+    a, li {
+      margin-bottom: 6px;
+      font-size: 21px;
+      color: #fff;
+    }
+  }
+
+  .form-control {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #202334;
+    color: #9FA2AB;
+    border: 0;
+    box-shadow: 0 2px 8px rgba(16, 18, 27, 0.6);
+
+    &:focus {
+      box-shadow: 0 2px 8px rgba(16, 18, 27, 0.6);
+    }
+  }
+
+  form .btn-theme {
+    margin: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    box-shadow: none;
+    border-radius: 0 4px 4px 0;
+    z-index: 9;
+  }
+}
+
+.footer-info {
+  max-width: 350px;
+}

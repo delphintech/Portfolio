@@ -2,7 +2,7 @@ import portrait from "../assets/img/Portrait-2023.jpg"
 
 export default function Profile() {
   return (
-    <div className="vg-page page-about" id="about">
+    <div className="page-about">
       <div className="container py-5">
         <div className="row">
           <div className="col-lg-4 py-3">
