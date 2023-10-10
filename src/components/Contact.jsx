@@ -1,9 +1,9 @@
 export default function Contact() {
   return (
     <div className="page-contact">
-      <div className="container-fluid">
+      <div className="container my-5">
         <div className="text-center wow fadeInUp">
-          <div className="badge badge-subhead">Contact</div>
+          <div className="badge badge-subhead mb-3 mt-5">Contact</div>
         </div>
         <h1 className="text-center fw-normal wow fadeInUp">Get in touch</h1>
         <div className="row d-flex justify-content-center py-5">

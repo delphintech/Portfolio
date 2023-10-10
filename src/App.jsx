@@ -17,18 +17,20 @@ function App() {
         <Navbar />
         <Landing />
       </div>
-      <div className="vg-page" id="about">
+      <div className="vg-page">
+        <div id="about">
           <Profile />
           <Skills />
-      </div>
-      <div className="vg-page" id="resume">
+        </div>
+      <div id="resume">
         <Timeline />
       </div>
-      <div className="vg-page" id="portfolio">
+      <div id="portfolio">
         <Portfolio />
       </div>
-      <div className="vg-page" id="contact">
+      <div id="contact">
         <Contact />
+      </div>
       </div>
       <Footer />
     </>

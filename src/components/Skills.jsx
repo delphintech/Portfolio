@@ -1,7 +1,7 @@
 export default function Skills() {
   return (
     <div className="page-service">
-      <div className="container pt-5">
+      <div className="container my-5">
         <div className="text-center wow fadeInUp">
           {/* <div className="badge badge-subhead">Programmation</div> */}
           <h1 className="text-center fw-normal wow fadeIn">Compétences</h1>

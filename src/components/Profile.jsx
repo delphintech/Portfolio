@@ -4,6 +4,9 @@ import CV from "../assets/Delphine Abouab - CV 2023 FR.pdf"
 export default function Profile() {
   return (
     <div className="page-about">
+      <div className="text-center">
+        <div className="badge badge-subhead">A propos</div>
+      </div>
       <div className="container py-5">
         <div className="row">
           <div className="col-lg-4 py-3 picture">
@@ -12,7 +15,6 @@ export default function Profile() {
             </div>
           </div>
           <div className="col-lg-6 offset-lg-1 wow fadeInRight">
-            <div className="badge badge-subhead">A propos</div>
             <h1 className="fw-light">Delphine Abouab</h1>
             <h5 className="fg-theme mb-3">Développeuse web Full Stack</h5>
             <p className="text-muted">

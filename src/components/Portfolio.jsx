@@ -9,9 +9,9 @@ import work6 from "../assets/img/work/work-6.jpg"
 export default function Portfolio() {
   return (
     <div className="page-portfolio">
-      <div className="container">
+      <div className="container my-5">
         <div className="text-center wow fadeInUp">
-          <div className="badge badge-subhead">Portfolio</div>
+          <div className="badge badge-subhead mb-3">Portfolio</div>
           <h1 className="fw-normal wow fadeInUp">Mes projets</h1>
         </div>
         {/* <div className="filterable-button py-3 wow fadeInUp" data-toggle="selected">
