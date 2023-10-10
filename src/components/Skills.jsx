@@ -10,44 +10,44 @@ export default function Skills() {
           <div className="col-md-6 col-lg-4 col-xl-3">
             <div className="card card-service wow fadeInUp">
               <div className="icon">
-                <i className="icon-ruby-on-rails"></i>
+                <i className="fa-solid fa-code"></i>
               </div>
               <div className="caption">
-                <h4 className="fg-theme">Ruby on Rails</h4>
-                <p>Full Stack Framework</p>
+                <h4 className="fg-theme">Programmation</h4>
+                <p>Ruby on Rails, React JS</p>
               </div>
             </div>
           </div>
           <div className="col-md-6 col-lg-4 col-xl-3">
             <div className="card card-service wow fadeInUp">
               <div className="icon">
-                <i className="icon-reactjs"></i>
+                <i className="fa-solid fa-laptop-code"></i>
               </div>
               <div className="caption">
-                <h4 className="fg-theme">React JS</h4>
-                <p>There are many variations of passages of Lorem Ipsum available</p>
+                <h4 className="fg-theme">Web</h4>
+                <p>JavaScript, HTML, CSS</p>
               </div>
             </div>
           </div>
           <div className="col-md-6 col-lg-4 col-xl-3">
             <div className="card card-service wow fadeInUp">
               <div className="icon">
-                <span className="ti-vector"></span>
+                <i className="fa-solid fa-computer-mouse"></i>
               </div>
               <div className="caption">
-                <h4 className="fg-theme">UI/UX Design</h4>
-                <p>There are many variations of passages of Lorem Ipsum available</p>
+                <h4 className="fg-theme">Tools</h4>
+                <p>Visual Studio, GitHub, Bootstrap, Heroku, Figma</p>
               </div>
             </div>
           </div>
           <div className="col-md-6 col-lg-4 col-xl-3">
             <div className="card card-service wow fadeInUp">
               <div className="icon">
-                <span className="ti-desktop"></span>
+                <i className="fa-solid fa-database"></i>
               </div>
               <div className="caption">
-                <h4 className="fg-theme">Web Development</h4>
-                <p>There are many variations of passages of Lorem Ipsum available</p>
+                <h4 className="fg-theme">DataBase</h4>
+                <p>MySQL, PostGreSQL</p>
               </div>
             </div>
           </div>
