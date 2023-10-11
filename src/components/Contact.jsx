@@ -1,8 +1,12 @@
 import React from "react"
 import emailjs from '@emailjs/browser';
+import FormPopup from './FormPopup'
 
 export default function Contact() {
-  const [formData, setFormData] = React.useState({ Name: "", Email: "", Subject: "", Message: ""})
+  const [formData, setFormData] = React.useState({ Name: "", Email: "", Subject: "", Message: "" })
+  const [popup, setPopup] = React.useState({ show: false })
+
+  function closePopup() { setPopup({ show: false }) }
 
   function handleChange(event) {
     const {name, value} = event.target
@@ -16,17 +20,22 @@ export default function Contact() {
 
   function handleSubmit(event) {
     event.preventDefault()
-    console.log(formData)
+    // Cleaning Form
+    setFormData({ Name: "", Email: "", Subject: "", Message: "" })
+    setPopup({ show: true, color: '.bg-success-subtle', text: 'Email envoyé !' })
 
-    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID,
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-      form.current,
-      process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+    // Sending Mail
+    // emailjs.sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID,
+    //   import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+    //   form.current,
+    //   import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
+    // .then(function(response) {
+    //   console.log('SUCCESS!', response.status, response.text);
+
+    // }, function(error) {
+
+    //   console.log('FAILED...', error);
+    // });
   }
 
   return (
@@ -42,19 +51,22 @@ export default function Contact() {
               <div className="form-row justify-content-center">
                 <div className="col-6 mt-3 wow fadeInUp">
                   <input className="form-control" type="text" name="Name" placeholder="Your Name"
-                    onChange={handleChange} value={FormData.Name} />
+                    onChange={handleChange} value={formData.Name} />
                 </div>
                 <div className="col-6 mt-3 wow fadeInUp">
                   <input className="form-control" type="text" name="Email" placeholder="Email Address"
-                    onChange={handleChange} value={FormData.Email} />
+                    onChange={handleChange} value={formData.Email} />
                 </div>
                 <div className="col-12 mt-3 wow fadeInUp">
                   <input className="form-control" type="text" name="Subject" placeholder="Subject"
-                    onChange={handleChange} value={FormData.Subject} />
+                    onChange={handleChange} value={formData.Subject} />
                 </div>
+
+<FormPopup data={popup} />
+
                 <div className="col-12 mt-3 wow fadeInUp">
                   <textarea className="form-control" name="Message" rows="6" placeholder="Enter message here.."
-                    onChange={handleChange} value={FormData.Message} ></textarea>
+                    onChange={handleChange} value={formData.Message} ></textarea>
                 </div>
                 <button type="submit" className="btn btn-theme mt-3 wow fadeInUp ml-1">Send Message</button>
               </div>
