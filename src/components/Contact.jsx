@@ -4,9 +4,14 @@ import FormPopup from './FormPopup'
 
 export default function Contact() {
   const [formData, setFormData] = React.useState({ Name: "", Email: "", Subject: "", Message: "" })
-  const [popup, setPopup] = React.useState({ show: false })
+  const [ popup, setPopup ] = React.useState({ show: false, type: "", text:"" })
 
-  function closePopup() { setPopup({ show: false }) }
+  function closePopup() {
+    setPopup(prevData => ({
+      ...prevData,
+      ['show']: false
+    }))
+   }
 
   function handleChange(event) {
     const {name, value} = event.target
@@ -20,22 +25,23 @@ export default function Contact() {
 
   function handleSubmit(event) {
     event.preventDefault()
-    // Cleaning Form
-    setFormData({ Name: "", Email: "", Subject: "", Message: "" })
-    setPopup({ show: true, color: '.bg-success-subtle', text: 'Email envoyé !' })
 
     // Sending Mail
-    // emailjs.sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID,
-    //   import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-    //   form.current,
-    //   import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
-    // .then(function(response) {
-    //   console.log('SUCCESS!', response.status, response.text);
-
-    // }, function(error) {
-
-    //   console.log('FAILED...', error);
-    // });
+    emailjs.sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      form.current,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
+    .then(function(response) {
+      console.log('SUCCESS!', response.status, response.text);
+      // Cleaning Form
+      setFormData({ Name: "", Email: "", Subject: "", Message: "" })
+      // Success Alert
+      setPopup({ show: true, type: 'success', text: <p>Merci pour votre message !</p> })
+    }, function(error) {
+      // Fail Alert
+      setPopup({ show: true, type: 'danger', text: <p>Oops ! Votre message n'a pas été envoyé.<br /> Merci de réessayer</p> })
+      console.log('FAILED...', error);
+    });
   }
 
   return (
@@ -49,24 +55,22 @@ export default function Contact() {
           <div className="col-lg-5">
             <form className="vg-contact-form" onSubmit={handleSubmit} ref={form}>
               <div className="form-row justify-content-center">
+                <FormPopup data={popup} close={closePopup} />
                 <div className="col-6 mt-3 wow fadeInUp">
                   <input className="form-control" type="text" name="Name" placeholder="Your Name"
-                    onChange={handleChange} value={formData.Name} />
+                    onChange={handleChange} value={formData.Name} required />
                 </div>
                 <div className="col-6 mt-3 wow fadeInUp">
                   <input className="form-control" type="text" name="Email" placeholder="Email Address"
-                    onChange={handleChange} value={formData.Email} />
+                    onChange={handleChange} value={formData.Email} required />
                 </div>
                 <div className="col-12 mt-3 wow fadeInUp">
                   <input className="form-control" type="text" name="Subject" placeholder="Subject"
-                    onChange={handleChange} value={formData.Subject} />
+                    onChange={handleChange} value={formData.Subject} required />
                 </div>
-
-<FormPopup data={popup} />
-
                 <div className="col-12 mt-3 wow fadeInUp">
                   <textarea className="form-control" name="Message" rows="6" placeholder="Enter message here.."
-                    onChange={handleChange} value={formData.Message} ></textarea>
+                    onChange={handleChange} value={formData.Message} required ></textarea>
                 </div>
                 <button type="submit" className="btn btn-theme mt-3 wow fadeInUp ml-1">Send Message</button>
               </div>
@@ -77,3 +81,11 @@ export default function Contact() {
     </div>
   )
 }
+
+
+  // <div class="col-md-4">
+  //   <label for="validationCustom01" class="form-label">First name</label>
+  //   <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+  //   <div class="valid-feedback">
+  //     Looks good!
+  //   </div>

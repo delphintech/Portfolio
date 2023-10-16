@@ -1,25 +1,11 @@
-import Modal from 'react-bootstrap/Modal';
+import Alert from 'react-bootstrap/Alert';
 
-export default function FormPopup({ data } ) {
+
+export default function FormPopup({ data, close } ) {
   console.log(data)
   return (
-      <Modal
-        show={data.show}
-        onHide={() => close()}
-        dialogClassName="modal-90w"
-        aria-labelledby="example-custom-modal-styling-title"
-        contentClassName={data.color}
-      >
-        {/* <Modal.Header closeButton>
-          <Modal.Title id="example-custom-modal-styling-title">
-            {data.text}
-          </Modal.Title>
-        </Modal.Header> */}
-        <Modal.Body  closeButton className={data.color}>
-        <div className={data.color}>
-          <p>{data.text}</p>
-        </div>
-        </Modal.Body>
-      </Modal>
+    <Alert show={data.show} variant={data.type} onClose={close} dismissible className="popup">
+      {data.text}
+    </Alert>
   )
 }
