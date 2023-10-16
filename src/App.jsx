@@ -1,13 +1,13 @@
 import './assets/style/index.scss'
 
-import Navbar from "./components/Navbar"
-import Landing from "./components/Landing"
-import Profile from "./components/Profile"
-import Skills from "./components/Skills"
-import Timeline from "./components/Timeline"
-import Portfolio from "./components/Portfolio"
-import Contact from "./components/Contact"
-import Footer from "./components/Footer"
+import Navbar from "./section/Navbar"
+import Landing from "./section/Landing"
+import Profile from "./section/Profile"
+import Skills from "./section/Skills"
+import Timeline from "./section/Timeline"
+import Portfolio from "./section/Portfolio"
+import Contact from "./section/Contact"
+import Footer from "./section/Footer"
 
 function App() {
   return (

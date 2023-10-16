@@ -6,6 +6,26 @@
   overflow: hidden;
 }
 
+img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.img-place {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 100%;height: 100%;
+  overflow: hidden;
+  z-index: 10;
+  width: 280px;
+  height: 350px;
+  background-color: #dfe0e6;
+  overflow: unset;
+}
+
 .divider {
   display: block;
   margin: -5px 0 16px 0;

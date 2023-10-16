@@ -1,6 +1,6 @@
 import React from "react"
 import emailjs from '@emailjs/browser';
-import FormPopup from './FormPopup'
+import FormPopup from '../components/FormPopup'
 
 export default function Contact() {
   const [formData, setFormData] = React.useState({ Name: "", Email: "", Subject: "", Message: "" })

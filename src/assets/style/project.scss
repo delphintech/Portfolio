@@ -1,0 +1,72 @@
+.project {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-project{
+  max-width: 1000px;
+  width: 100%;
+  padding: 3rem;
+  background-color: rgb(46, 45, 45);
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 4px;
+
+  img{
+    height: fit-content;
+    width: 75%;
+    padding: 1rem
+  }
+  .row{
+    margin: 0
+  }
+
+  .path{
+    color: grey;
+    margin-bottom: 1rem
+    a{
+      color: #ffffff
+    }
+  }
+
+  .info{
+    padding: 6vh 0vh
+  }
+
+  .title .col {
+    padding: 0
+  }
+
+  .dismiss  {
+    color: rgba(255, 255, 255, 0.5);
+    float: right;
+    position: relative;
+    top: -1.5rem;
+    right: -1.5rem;
+    font-size: 1.5rem;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+@media(max-width:768px){
+  .card-project{
+    width: 100%;
+    padding: 1.5rem
+    }
+
+  .info{
+    padding: 0
+  }
+
+  img{
+    padding: 2.5rem 0
+  }
+}
