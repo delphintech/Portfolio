@@ -11,7 +11,7 @@
 .card-project{
   max-width: 1000px;
   width: 100%;
-  padding: 3rem;
+  padding: 2rem;
   background-color: rgb(46, 45, 45);
   color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -19,11 +19,25 @@
 
   img{
     height: fit-content;
-    width: 75%;
+    width: 50%;
     padding: 1rem
   }
+
   .row{
     margin: 0
+  }
+
+  .icons {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+  }
+
+  ul {
+    padding-left: 0rem;
+    list-style-type: none;
+    li {
+      padding-bottom: 1rem;
+    }
   }
 
   .path{
@@ -46,9 +60,10 @@
     color: rgba(255, 255, 255, 0.5);
     float: right;
     position: relative;
-    top: -1.5rem;
-    right: -1.5rem;
+    top: -1rem;
+    right: -1rem;
     font-size: 1.5rem;
+    cursor: pointer;
 
     &:hover {
       color: #fff;
@@ -59,14 +74,14 @@
 @media(max-width:768px){
   .card-project{
     width: 100%;
-    padding: 1.5rem
+    padding: 1rem;
+
+    .info {
+    padding: 0
     }
 
-  .info{
-    padding: 0
-  }
-
-  img{
-    padding: 2.5rem 0
+    img{
+      padding: 2rem 0
+    }
   }
 }

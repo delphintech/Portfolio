@@ -3,18 +3,17 @@ import React from "react"
 import Card from "../components/Card"
 import Project from "../components/Project"
 
-import work1 from "../assets/img/work/work-1.jpg"
+import TravelPal from "../components/Travelpal"
 
 export default function Portfolio() {
   const [showDetails, setShowDetails] = React.useState(false)
   console.log(showDetails)
 
-  const data={image: work1, title: "Mobile Travel App", text: "Travel, Discovery" }
-
   function toggleDetails() {
     setShowDetails(p => !p )
     console.log(showDetails)
   }
+
 
   return (
     <div className="page-portfolio">
@@ -23,9 +22,9 @@ export default function Portfolio() {
           <div className="badge badge-subhead mb-3">Portfolio</div>
           <h1 className="fw-normal wow fadeInUp">Mes projets</h1>
         </div>
-        {showDetails && <Project toggle={toggleDetails}/>}
+        {showDetails && <Project toggle={toggleDetails} data={TravelPal.details} />}
         <div className="row my-5">
-            <Card data={data} toggleDetails={toggleDetails} />
+            <Card data={TravelPal.card} toggleDetails={toggleDetails} />
         </div>
       </div>
     </div>
