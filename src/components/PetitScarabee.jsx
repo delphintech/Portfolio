@@ -1,20 +1,18 @@
-import around from "../assets/img/projets/travelpal/Travelpal - around.png"
-import chat from "../assets/img/projets/travelpal/Travelpal - chat.png"
-import dashMap from "../assets/img/projets/travelpal/Travelpal - Dashboard map.png"
-import dashPics from "../assets/img/projets/travelpal/Travelpal - Dashboard pics.png"
-import feed from "../assets/img/projets/travelpal/Travelpal - feed.png"
-import cover from "../assets/img/projets/travelpal/Travelpal - cover2.png"
-
+import dash from "../assets/img/projets/petitScarabee/Petit scarabée - Dashboard.png"
+import landing from "../assets/img/projets/petitScarabee/Petit scarabée - landing.png"
+import lessonsList from "../assets/img/projets/petitScarabee/Petit scarabée - Lessons list.png"
+import lessonPage from "../assets/img/projets/petitScarabee/Petit scarabée - Lessons page.png"
+import cover from "../assets/img/projets/petitScarabee/Petit scarabée - cover.avif"
 
 const petitScarabee = {
   card: {
     img: cover,
     title: "Petit-scarabée",
-    text: "Réseau social de création, suivi et partage de journaux de voyage"
+    text: "Marketplace de propositions et réservations de lessons entre particuliers."
   },
 
   details: {
-    img: [feed, around, chat, dashMap, dashPics],
+    img: [landing, lessonsList, lessonPage, dash],
     title: "Petit-scarabée",
     text:
       <div>
@@ -28,8 +26,8 @@ const petitScarabee = {
         <em>Ruby on Rails, Stimulus (Javscript), HTML5, SASS</em><br/><br/>
         <ul>
           <li><strong>PostgreSQL: </strong>Base de donnée</li>
-          <li><strong>ActionCable: </strong>Chatroom</li>
-          <li><strong>MapBox API: </strong>Trouver les voyageurs autours de soit et voir les voyages</li>
+          <li><strong>MapBox API: </strong>Montrer la localisation du cours</li>
+          <li><strong>Flastpickr: </strong>Gestion des calendriers</li>
           <li><strong>Bootstrap: </strong>Front et interactivitée (tab, carrousel ...)</li>
         </ul>
       </div>

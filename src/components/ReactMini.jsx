@@ -1,9 +1,6 @@
-import around from "../assets/img/projets/travelpal/Travelpal - around.png"
-import chat from "../assets/img/projets/travelpal/Travelpal - chat.png"
-import dashMap from "../assets/img/projets/travelpal/Travelpal - Dashboard map.png"
-import dashPics from "../assets/img/projets/travelpal/Travelpal - Dashboard pics.png"
-import feed from "../assets/img/projets/travelpal/Travelpal - feed.png"
-import cover from "../assets/img/projets/travelpal/Travelpal - cover2.png"
+import tenzy from "../assets/img/projets/react/Tenzy.gif"
+import cover from "../assets/img/projets/react/react-pic.jpg"
+import notePad from "../assets/img/projets/react/NotePad-phone.png"
 
 
 const reactMini = {
@@ -14,7 +11,7 @@ const reactMini = {
   },
 
   details: {
-    img: [feed, around, chat, dashMap, dashPics],
+    img: [tenzy, notePad],
     title: "React mini projects",
     text:
       <div>

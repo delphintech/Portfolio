@@ -3,7 +3,7 @@ import chat from "../assets/img/projets/travelpal/Travelpal - chat.png"
 import dashMap from "../assets/img/projets/travelpal/Travelpal - Dashboard map.png"
 import dashPics from "../assets/img/projets/travelpal/Travelpal - Dashboard pics.png"
 import feed from "../assets/img/projets/travelpal/Travelpal - feed.png"
-import cover from "../assets/img/projets/travelpal/Travelpal - cover2.png"
+import cover from "../assets/img/projets/travelpal/Travelpal - cover.jpg"
 
 
 const travelPal = {
