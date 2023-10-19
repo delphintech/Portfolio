@@ -6,16 +6,16 @@ import feed from "../assets/img/projets/travelpal/Travelpal - feed.png"
 import cover from "../assets/img/projets/travelpal/Travelpal - cover2.png"
 
 
-const travelPal = {
+const reactMini = {
   card: {
     img: cover,
-    title: "TravelPal",
+    title: "React mini projects",
     text: "Réseau social de création, suivi et partage de journaux de voyage"
   },
 
   details: {
     img: [feed, around, chat, dashMap, dashPics],
-    title: "TravelPal",
+    title: "React mini projects",
     text:
       <div>
         <br/>
@@ -36,4 +36,4 @@ const travelPal = {
   }
 }
 
-export default travelPal
+export default reactMini

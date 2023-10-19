@@ -11,6 +11,8 @@ export default function Project({ toggle, data }) {
       )}
     </Carousel>
 
+  console.log(data)
+
 
   return (
     <div className="container project">

@@ -3,17 +3,26 @@ import React from "react"
 import Card from "../components/Card"
 import Project from "../components/Project"
 
-import TravelPal from "../components/Travelpal"
+import travelPal from "../components/Travelpal"
+import petitScarabee from "../components/PetitScarabee"
+import reactMini from "../components/ReactMini"
 
 export default function Portfolio() {
-  const [showDetails, setShowDetails] = React.useState(false)
-  console.log(showDetails)
+  const project_list = [travelPal, petitScarabee, reactMini]
 
-  function toggleDetails() {
-    setShowDetails(p => !p )
-    console.log(showDetails)
+  const [project, setProject] = React.useState({ show: false, current: null })
+
+
+  function toggleDetails(projectData) {
+    setProject(prevProject => ({
+      show: !prevProject.show,
+      current: prevProject.current ? null : projectData
+    }))
   }
 
+  const cards = project_list.map((project, index) =>
+    <Card project={project} toggleDetails={toggleDetails} key={index} />
+  )
 
   return (
     <div className="page-portfolio">
@@ -22,9 +31,9 @@ export default function Portfolio() {
           <div className="badge badge-subhead mb-3">Portfolio</div>
           <h1 className="fw-normal wow fadeInUp">Mes projets</h1>
         </div>
-        {showDetails && <Project toggle={toggleDetails} data={TravelPal.details} />}
+        {project.show && <Project toggle={toggleDetails} data={project.current.details} />}
         <div className="row my-5">
-            <Card data={TravelPal.card} toggleDetails={toggleDetails} />
+            { cards }
         </div>
       </div>
     </div>
