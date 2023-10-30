@@ -1,7 +1,7 @@
-import dash from "../assets/img/projets/petitScarabee/Petit scarabée - Dashboard.png"
-import landing from "../assets/img/projets/petitScarabee/Petit scarabée - landing.png"
-import lessonsList from "../assets/img/projets/petitScarabee/Petit scarabée - Lessons list.png"
-import lessonPage from "../assets/img/projets/petitScarabee/Petit scarabée - Lessons page.png"
+import dash from "../assets/img/projets/petitScarabee/dashboard_lpt.png"
+import landing from "../assets/img/projets/petitScarabee/landing_lpt.png"
+import lessonsList from "../assets/img/projets/petitScarabee/list_lpt.png"
+import lessonPage from "../assets/img/projets/petitScarabee/lesson_lpt.png"
 import cover from "../assets/img/projets/petitScarabee/Petit scarabée - cover.avif"
 
 const petitScarabee = {
