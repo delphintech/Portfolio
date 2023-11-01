@@ -9,8 +9,8 @@ export default function Footer() {
               <p>Réseaux</p>
               <hr className="divider" />
               <ul className="list-unstyled">
-                <li><a href="#">Linkedin</a></li>
-                <li><a href="#">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/delphine-abouab/"  rel="noreferrer" target="_blank">Linkedin</a></li>
+                <li><a href="https://github.com/delphintech" rel="noreferrer" target="_blank">Github</a></li>
               </ul>
             </div>
           </div>
@@ -19,8 +19,8 @@ export default function Footer() {
               <p>Contact</p>
               <hr className="divider" />
               <ul className="list-unstyled">
-                <li>delphine.abouab@outlook.fr</li>
-                <li>+33 6 79 32 77 51</li>
+                <li><a href="mailto:delphine.abouab@outlook.fr">delphine.abouab@outlook.fr</a></li>
+                <li><a href="tel:+33679327751">+33 6 79 32 77 51</a></li>
               </ul>
             </div>
           </div>

@@ -6525,7 +6525,6 @@ a.close.disabled {
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: center;
-  justify-content: center;
   width: 15%;
   color: #fff;
   text-align: center;
@@ -6551,10 +6550,12 @@ a.close.disabled {
 
 .carousel-control-prev {
   left: 0;
+  justify-content: flex-start;
 }
 
 .carousel-control-next {
   right: 0;
+  justify-content: flex-end;
 }
 
 .carousel-control-prev-icon,

@@ -25,13 +25,13 @@ export default function Portfolio() {
   )
 
   return (
-    <div className="page-portfolio">
+    <div className="page-portfolio" onClick={() => setProject({ show: false })}>
       <div className="container my-5">
         <div className="text-center wow fadeInUp">
           <div className="badge badge-subhead mb-3">Portfolio</div>
           <h1 className="fw-normal wow fadeInUp">Mes projets</h1>
         </div>
-        {project.show && <Project toggle={toggleDetails} data={project.current.details} />}
+        {project.show && <Project toggle={toggleDetails} details={project.current.details} />}
         <div className="row my-5">
             { cards }
         </div>
