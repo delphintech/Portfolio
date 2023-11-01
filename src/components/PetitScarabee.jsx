@@ -23,7 +23,7 @@ const petitScarabee = {
           <i className="icon-sass"> </i>
           <i className="icon-html5"/>
         </span><br/>
-        <em>Ruby on Rails, Stimulus (Javscript), HTML5, SASS</em><br/><br/>
+        <em>Ruby on Rails, Stimulus (Javscript), SASS, HTML5</em><br/><br/>
         <ul>
           <li><strong>PostgreSQL: </strong>Base de donnée</li>
           <li><strong>MapBox API: </strong>Montrer la localisation du cours</li>
