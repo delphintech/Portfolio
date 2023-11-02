@@ -6,7 +6,7 @@ export default function Project({ toggle, details }) {
   const singleProject =
     <div className="row">
       <div className="col-md-6 text-center align-self-center">
-          <Carousel indicators= {false}>
+          <Carousel indicators= {false} interval={null}>
             {!Array.isArray(details) && details.img.map((image, index) =>
               <Carousel.Item key={index}>
                 <img src={image} />
@@ -25,7 +25,7 @@ export default function Project({ toggle, details }) {
   </div>
 
   const multipleProjects =
-    <Carousel indicators= {false}>
+    <Carousel indicators= {false} interval={null}>
       {Array.isArray(details) && details.map((detail, index) =>
         <Carousel.Item key={index}>
           <div className="row">

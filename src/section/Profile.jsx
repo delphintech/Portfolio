@@ -27,11 +27,13 @@ export default function Profile() {
               <li><b>Age:</b> 32</li>
               <li><b>Gender:</b> Female</li>
             </ul> */}
-            <a href={CV} download="Delphine Abouab - CV 2023">
-              <button className="btn btn-theme-outline" >
-                <i className="fa-solid fa-file-arrow-down pr-1"></i> Mon CV
-              </button>
-            </a>
+            <div className="centered">
+              <a href={CV} download="Delphine Abouab - CV 2023">
+                <button className="btn btn-theme-outline" >
+                  <i className="fa-solid fa-file-arrow-down pr-1"></i> Mon CV
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </div>

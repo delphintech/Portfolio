@@ -1,0 +1,73 @@
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: "768px") {
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .page-home {
+    height: 100vh;
+  }
+
+  .centered {
+    text-align: center;
+  }
+ }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: "768px") {
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .card-project{
+    width: 100%;
+    padding: 2rem;
+
+    .info {
+    padding: 0
+    }
+
+    img{
+      padding: 1rem
+    }
+  }
+
+  .page-home {
+    height: 100vh;
+  }
+
+  .centered {
+    text-align: center;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: "992px") {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .grid-item, .grid-sizer {
+      width: 33.33333%;
+  }
+
+  .centered {
+    text-align:left;
+  }
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: "1200px") {
+  .navbar-expand-xl .navbar-nav .nav-link {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .grid-item, .grid-sizer {
+    width: 50%;
+  }
+ }

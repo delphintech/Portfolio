@@ -9,7 +9,9 @@
 }
 
 .card-project{
-  max-width: 1000px;
+  overflow: auto;
+  max-width: 100vw;
+  max-height: 100vh;
   width: 100%;
   padding: 2rem;
   background-color: rgb(46, 45, 45);
@@ -50,7 +52,10 @@
   }
 
   .info{
-    padding: 6vh 0vh
+    padding: 6vh 0vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .title .col {
@@ -68,21 +73,6 @@
 
     &:hover {
       color: #fff;
-    }
-  }
-}
-
-@media(max-width:768px){
-  .card-project{
-    width: 100%;
-    padding: 1rem;
-
-    .info {
-    padding: 0
-    }
-
-    img{
-      padding: 2rem 0
     }
   }
 }
