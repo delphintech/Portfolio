@@ -1,6 +1,7 @@
 import React from "react"
 import emailjs from '@emailjs/browser';
 import FormPopup from '../components/FormPopup'
+import { Fade } from "react-awesome-reveal";
 
 export default function Contact() {
   const [formData, setFormData] = React.useState({ Name: "", Email: "", Subject: "", Message: "" })
@@ -47,34 +48,38 @@ export default function Contact() {
   return (
     <div className="page-contact">
       <div className="container my-5">
-        <div className="text-center wow fadeInUp">
-          <div className="badge badge-subhead mb-3 mt-5">Contact</div>
-        </div>
-        <h1 className="text-center fw-normal wow fadeInUp">Me contacter</h1>
+        <Fade direction="down">
+          <div className="text-center">
+              <div className="badge badge-subhead mb-3 mt-5">Contact</div>
+          </div>
+          <h1 className="text-center fw-normal">Me contacter</h1>
+        </Fade>
         <div className="row d-flex justify-content-center pt-3">
           <div className="col-lg-5">
-            <form className="vg-contact-form" onSubmit={handleSubmit} ref={form}>
-              <div className="form-row justify-content-center">
-                <FormPopup data={popup} close={closePopup} />
-                <div className="col-6 mt-3 wow fadeInUp">
-                  <input className="form-control" type="text" name="Name" placeholder="Nom"
-                    onChange={handleChange} value={formData.Name} required />
+            <Fade direction="up">
+              <form className="vg-contact-form" onSubmit={handleSubmit} ref={form}>
+                <div className="form-row justify-content-center">
+                  <FormPopup data={popup} close={closePopup} />
+                  <div className="col-6 mt-3">
+                    <input className="form-control" type="text" name="Name" placeholder="Nom"
+                      onChange={handleChange} value={formData.Name} required />
+                  </div>
+                  <div className="col-6 mt-3">
+                    <input className="form-control" type="text" name="Email" placeholder="Email"
+                      onChange={handleChange} value={formData.Email} required />
+                  </div>
+                  <div className="col-12 mt-3">
+                    <input className="form-control" type="text" name="Subject" placeholder="Objet"
+                      onChange={handleChange} value={formData.Subject} required />
+                  </div>
+                  <div className="col-12 mt-3">
+                    <textarea className="form-control" name="Message" rows="6" placeholder="Votre message.."
+                      onChange={handleChange} value={formData.Message} required ></textarea>
+                  </div>
+                  <button type="submit" className="btn btn-theme mt-3 ml-1">Envoyer</button>
                 </div>
-                <div className="col-6 mt-3 wow fadeInUp">
-                  <input className="form-control" type="text" name="Email" placeholder="Email"
-                    onChange={handleChange} value={formData.Email} required />
-                </div>
-                <div className="col-12 mt-3 wow fadeInUp">
-                  <input className="form-control" type="text" name="Subject" placeholder="Objet"
-                    onChange={handleChange} value={formData.Subject} required />
-                </div>
-                <div className="col-12 mt-3 wow fadeInUp">
-                  <textarea className="form-control" name="Message" rows="6" placeholder="Votre message.."
-                    onChange={handleChange} value={formData.Message} required ></textarea>
-                </div>
-                <button type="submit" className="btn btn-theme mt-3 wow fadeInUp ml-1">Envoyer</button>
-              </div>
-            </form>
+              </form>
+            </Fade>
           </div>
         </div>
       </div>

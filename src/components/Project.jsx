@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import Carousel from 'react-bootstrap/Carousel';
+import { Zoom } from "react-awesome-reveal";
 
 export default function Project({ toggle, details }) {
   console.log(details)
@@ -46,11 +47,13 @@ export default function Project({ toggle, details }) {
 
 
   return (
-    <div className="container project" onClick={(e) => e.stopPropagation()} >
-      <div className="card-project">
-        <i className="fa-solid fa-xmark dismiss" onClick={toggle}/>
-        { Array.isArray(details) ? multipleProjects : singleProject }
+      <div className="container project" onClick={(e) => e.stopPropagation()} >
+    <Zoom triggerOnce={true}>
+        <div className="card-project">
+          <i className="fa-solid fa-xmark dismiss" onClick={toggle}/>
+          { Array.isArray(details) ? multipleProjects : singleProject }
+        </div>
+    </Zoom>
       </div>
-    </div>
   )
 }
