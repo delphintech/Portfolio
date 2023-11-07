@@ -1,5 +1,45 @@
-const Logo =
-    <svg xmlns="http://www.w3.org/2000/svg" width="145" height="146">
+// import { motion } from "framer-motion";
+
+// const icon = {
+//   hidden: {
+//     opacity: 0,
+//     pathLength: 0,
+//     fill: "rgba(255, 255, 255, 0)"
+//   },
+//   visible: {
+//     opacity: 1,
+//     pathLength: 1,
+//     fill: "rgba(255, 255, 255, 1)"
+//   }
+// };
+
+// export const Example = () => (
+//   <div className="container">
+//     <motion.svg
+//       xmlns="http://www.w3.org/2000/svg"
+//       viewBox="0 0 100 100"
+//       className="item"
+//     >
+//       <motion.path
+//         d="M0 100V0l50 50 50-50v100L75 75l-25 25-25-25z"
+//         variants={icon}
+//         initial="hidden"
+//         animate="visible"
+//         transition={{
+//           default: { duration: 2, ease: "easeInOut" },
+//           fill: { duration: 2, ease: [1, 0, 0.8, 1] }
+//         }}
+//       />
+//     </motion.svg>
+//   </div>
+// );
+
+
+
+// width="145" height="146"
+export default function logo(viewbox) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg"  id="logo" viewBox={viewbox}>
       <path
         fill="#C2BEE3"
         d="M64 15c10.11 1.075 18.936 8.607 26.535 14.95a147.034 147.034 0 005.211
@@ -22,11 +62,10 @@ const Logo =
         6.496-1.41 13.312.684 19.594 1.747 2.582 1.747 2.582 4.5 4.5C57 123 57 123 57.312 125.75L57
         128l-2 1c-7.665-2.817-14.54-7.112-18.938-14.063-2.045-5.597-2.03-13.153-.562-18.89.742-3.038.71
         -5.988.75-9.11l.078-3.722c-.069-3.142-.069-3.142-1.582-5.106-2.06-1.309-3.51-1.598-5.934-1.796L25
-         76l-1-4 2.117-1.207 2.758-1.606 2.742-1.582C34.233 66.063 34.233 66.063 36 63c.28-3.033.28
-         -3.033.188-6.375l-.02-3.398c-.15-2.87-.58-5.425-1.168-8.227-.652-7.154-.44-13.13 4-19 4.139
-         -4.381 11.006-11.41 17.438-10.75z"
+        76l-1-4 2.117-1.207 2.758-1.606 2.742-1.582C34.233 66.063 34.233 66.063 36 63c.28-3.033.28
+        -3.033.188-6.375l-.02-3.398c-.15-2.87-.58-5.425-1.168-8.227-.652-7.154-.44-13.13 4-19 4.139
+        -4.381 11.006-11.41 17.438-10.75z"
       ></path>
     </svg>
-
-
-export default Logo
+  )
+}
