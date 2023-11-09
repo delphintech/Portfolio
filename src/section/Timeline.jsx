@@ -4,14 +4,14 @@ export default function Timeline() {
   return (
     <div className="container my-5">
         <div className="text-center pb-5">
-          <Fade direction="down">
+          <Fade direction="down" triggerOnce={true}>
             <div className="badge badge-subhead mb-3">Curriculum</div>
             <h1 className="fw-normal">Expériences & formations</h1>
           </Fade>
         </div>
       <div className="row">
         <div className="col-md-6">
-          <Fade direction="right" cascade>
+          <Fade direction="right" cascade triggerOnce={true}>
             <h2 className="fw-normal">Formations</h2>
             <ul className="timeline mt-4 pr-md-5">
               <li>
@@ -42,7 +42,7 @@ export default function Timeline() {
           </Fade>
         </div>
         <div className="col-md-6">
-          <Fade direction="right" cascade>
+          <Fade direction="right" cascade triggerOnce={true}>
             <h2 className="fw-normal">Experience</h2>
             <ul className="timeline mt-4 pr-md-5">
               <li>

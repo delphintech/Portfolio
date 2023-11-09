@@ -12,7 +12,7 @@ export default function Card({ project, toggleDetails }) {
 
   return (
     <div className="grid-item col-md-12 col-lg-6 col-xl-4" >
-      <Zoom>
+      <Zoom triggerOnce={true}>
         <div className="img-place" onClick={handleClick} >
           <img src={data.img} alt="" />
           <div className="img-caption">

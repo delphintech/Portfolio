@@ -3,7 +3,6 @@ import Carousel from 'react-bootstrap/Carousel';
 import { Zoom } from "react-awesome-reveal";
 
 export default function Project({ toggle, details }) {
-  console.log(details)
   const singleProject =
     <div className="row">
       <div className="col-md-6 text-center align-self-center">

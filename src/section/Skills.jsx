@@ -5,12 +5,12 @@ export default function Skills() {
     <div className="page-service">
       <div className="container my-5">
         <div className="text-center">
-          <Fade direction="down">
+          <Fade direction="down" triggerOnce={true}>
             {/* <div className="badge badge-subhead">Programmation</div> */}
             <h1 className="text-center fw-normal">Compétences</h1>
           </Fade>
         </div>
-        <Fade direction="up" cascade>
+        <Fade direction="up" cascade triggerOnce={true}>
           <div className="row mt-5">
             <div className="col-md-6 col-lg-4 col-xl-3">
               <div className="card card-service">

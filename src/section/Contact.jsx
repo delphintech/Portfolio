@@ -48,7 +48,7 @@ export default function Contact() {
   return (
     <div className="page-contact">
       <div className="container my-5">
-        <Fade direction="down">
+        <Fade direction="down" triggerOnce={true}>
           <div className="text-center">
               <div className="badge badge-subhead mb-3 mt-5">Contact</div>
           </div>
@@ -56,7 +56,7 @@ export default function Contact() {
         </Fade>
         <div className="row d-flex justify-content-center pt-3">
           <div className="col-lg-5">
-            <Fade direction="up">
+            <Fade direction="up" triggerOnce={true}>
               <form className="vg-contact-form" onSubmit={handleSubmit} ref={form}>
                 <div className="form-row justify-content-center">
                   <FormPopup data={popup} close={closePopup} />

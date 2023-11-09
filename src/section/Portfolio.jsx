@@ -29,7 +29,7 @@ export default function Portfolio() {
     <div className="page-portfolio" onClick={() => setProject({ show: false })}>
       <div className="container my-5">
         <div className="text-center">
-          <Fade direction="down">
+          <Fade direction="down" triggerOnce={true}>
             <div className="badge badge-subhead mb-3">Portfolio</div>
             <h1 className="fw-normal">Mes projets</h1>
           </Fade>
