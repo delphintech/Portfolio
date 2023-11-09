@@ -39,7 +39,7 @@
 // width="145" height="146"
 export default function logo(viewbox) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg"  id="logo" viewBox={viewbox}>
+    <svg xmlns="https://www.w3.org/2000/svg"  id="logo" viewBox={viewbox}>
       <path
         fill="#C2BEE3"
         d="M64 15c10.11 1.075 18.936 8.607 26.535 14.95a147.034 147.034 0 005.211
