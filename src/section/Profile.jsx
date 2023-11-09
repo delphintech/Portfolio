@@ -14,7 +14,7 @@ export default function Profile() {
       <div className="container py-5">
         <div className="row">
           <div className="col-lg-4 py-3 picture">
-            <Fade direction="up">
+            <Fade direction="up" triggerOnce={true}>
               <div className="img-place">
                 <img src={portrait} alt="" />
               </div>
