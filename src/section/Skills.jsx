@@ -19,7 +19,7 @@ export default function Skills() {
                 </div>
                 <div className="caption">
                   <h4 className="fg-theme">Programmation</h4>
-                  <p>Ruby on Rails, React JS</p>
+                  <p>Ruby on Rails, ReactJS</p>
                 </div>
               </div>
             </div>

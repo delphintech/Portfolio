@@ -7,7 +7,7 @@ export default function Navbar() {
       <div className="container">
         <div>
           {/* {logo("0 0 200 200")} */}
-          <a href="" className="navbar-brand"><b className="fg-theme">Delphin</b>Thech</a>
+          <a href="" className="navbar-brand"><b className="fg-theme">Delphin</b>Tech</a>
         </div>
         <button className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-navbar" aria-expanded="true">
           <i className="fa-solid fa-bars"></i>

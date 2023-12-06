@@ -6,7 +6,7 @@ export default function Timeline() {
         <div className="text-center pb-5">
           <Fade direction="down" triggerOnce={true}>
             <div className="badge badge-subhead mb-3">Curriculum</div>
-            <h1 className="fw-normal">Expériences & formations</h1>
+            <h1 className="fw-normal">Expériences & Formations</h1>
           </Fade>
         </div>
       <div className="row">
@@ -27,13 +27,13 @@ export default function Timeline() {
                 <div className="details">
                   <h5>Licence professionnelle Technico-commerciale</h5>
                   <small className="fg-theme">IUT Cachan</small>
-                  <p><em>Major de promotion</em><br/> alternance faite chez les Régulateurs Georgin</p>
+                  <p><em>Major de promotion</em><br/>. Alternance chez les Régulateurs Georgin</p>
                 </div>
               </li>
               <li>
                 <div className="title">2010 - 2014</div>
                 <div className="details">
-                  <h5>Ecole d&apos;ingénieur Généraliste</h5>
+                  <h5>Ecole d&apos;Ingénieur généraliste</h5>
                   <small className="fg-theme">HEI, Lille</small>
                   <p>Validation équivalent licence 3</p>
                 </div>
@@ -43,14 +43,14 @@ export default function Timeline() {
         </div>
         <div className="col-md-6">
           <Fade direction="right" cascade triggerOnce={true}>
-            <h2 className="fw-normal">Experience</h2>
+            <h2 className="fw-normal">Expériences</h2>
             <ul className="timeline mt-4 pr-md-5">
               <li>
                 <div className="title">2023 - Actuel</div>
                 <div className="details">
                   <h5>Professeure assistante</h5>
                   <small className="fg-theme">Le Wagon, Paris</small>
-                  <p>Accompagnement des élèves sur la résultion d&apos;exercice<br/>Explication des cours</p>
+                  <p>Accompagnement des élèves sur la résolution d&apos;exercices<br/>Explication des cours</p>
                 </div>
               </li>
               <li>
@@ -58,7 +58,7 @@ export default function Timeline() {
                 <div className="details">
                   <h5>Commerciale & Customer Success manager</h5>
                   <small className="fg-theme">Plato.immo</small>
-                  <p><em>Start-up achetée part Aviv group en mai 2022</em>
+                  <p><em>Start-up achetée par Aviv group en mai 2022</em>
                   <br/>Prospection téléphonique, démonstrations du produit, suivi client, articles de presse …
                   <br/>Installations, formations, création d&apos;un product tour(Userpilot), support client (Intercom).</p>
                 </div>

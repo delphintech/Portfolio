@@ -7,14 +7,14 @@ import notePad from "../assets/img/projets/react/NotePad-phone.png"
 const reactMini = {
   card: {
     img: cover,
-    title: "React mini projects",
-    text: "Mini projets pour appronfondir de ReactJS"
+    title: "Mini projets ReactJs",
+    text: "Mini projets pour appronfondir ReactJs."
   },
 
   details:[
     {
     img: tenzy,
-    title: "Tenzi Game",
+    title: "Tenzy Game",
     text:
       <div>
         <br/>
@@ -31,7 +31,7 @@ const reactMini = {
     },
     {
     img: notePad,
-    title: "NotePad",
+    title: "Notepad",
     text:
       <div>
         <br/>
@@ -43,7 +43,7 @@ const reactMini = {
         </span><br/>
         <em>ReactJS, Firebase, SASS, HTML5</em><br/><br/>
         <ul>
-          <li><strong>Firebase: </strong>Base de donnée</li>
+          <li><strong>Firebase: </strong>Base de données</li>
         </ul>
       </div>
     }

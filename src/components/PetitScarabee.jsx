@@ -7,13 +7,13 @@ import cover from "../assets/img/projets/petitScarabee/Petit scarabée - cover.a
 const petitScarabee = {
   card: {
     img: cover,
-    title: "Petit-scarabée",
-    text: "Marketplace de propositions et réservations de lessons entre particuliers."
+    title: "Petit scarabée",
+    text: "Marketplace de propositions et réservations de cours entre particuliers."
   },
 
   details: {
     img: [landing, lessonsList, lessonPage, dash],
-    title: "Petit-scarabée",
+    title: "Petit scarabée",
     text:
       <div>
         <br/>
@@ -25,10 +25,10 @@ const petitScarabee = {
         </span><br/>
         <em>Ruby on Rails, Stimulus (Javscript), SASS, HTML5</em><br/><br/>
         <ul>
-          <li><strong>PostgreSQL: </strong>Base de donnée</li>
+          <li><strong>PostgreSQL: </strong>Base de données</li>
           <li><strong>MapBox API: </strong>Montrer la localisation du cours</li>
           <li><strong>Flastpickr: </strong>Gestion des calendriers</li>
-          <li><strong>Bootstrap: </strong>Front et interactivitée (tab, carrousel ...)</li>
+          <li><strong>Bootstrap: </strong>Front et interactivité (tab, carrousel ...)</li>
         </ul>
       </div>
   }

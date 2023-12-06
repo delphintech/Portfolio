@@ -35,7 +35,7 @@ export default function Portfolio() {
           </Fade>
         </div>
           {project.show && <Project toggle={toggleDetails} details={project.current.details} />}
-         <div className="row my-5">
+        <div className="row my-5">
             { cards }
         </div>
       </div>

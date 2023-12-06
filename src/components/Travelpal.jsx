@@ -9,13 +9,13 @@ import cover from "../assets/img/projets/travelpal/Travelpal - cover.jpg"
 const travelPal = {
   card: {
     img: cover,
-    title: "TravelPal",
-    text: "Réseau social de création, suivi et partage de journaux de voyage"
+    title: "Travelpal",
+    text: "Réseau social de création, suivi et partage de journaux de voyages."
   },
 
   details: {
     img: [feed, around, chat, dashMap, dashPics],
-    title: "TravelPal",
+    title: "Travelpal",
     text:
       <div>
         <br/>
@@ -27,10 +27,10 @@ const travelPal = {
         </span><br/>
         <em>Ruby on Rails, Stimulus (Javscript), SASS, HTML5</em><br/><br/>
         <ul>
-          <li><strong>PostgreSQL: </strong>Base de donnée</li>
+          <li><strong>PostgreSQL: </strong>Base de données</li>
           <li><strong>ActionCable: </strong>Chatroom</li>
           <li><strong>MapBox API: </strong>Trouver les voyageurs autours de soit et voir les voyages</li>
-          <li><strong>Bootstrap: </strong>Front et interactivitée (tab, carrousel ...)</li>
+          <li><strong>Bootstrap: </strong>Front et interactivité (tab, carrousel ...)</li>
         </ul>
       </div>
   }
