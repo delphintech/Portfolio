@@ -12,7 +12,7 @@ export default function Contact() {
       ...prevData,
       ['show']: false
     }))
-   }
+  }
 
   function handleChange(event) {
     const {name, value} = event.target
