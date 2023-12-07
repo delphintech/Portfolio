@@ -24,13 +24,13 @@ export default function Contact() {
 
   const form = React.useRef();
 
+
   function handleSubmit(event) {
     event.preventDefault()
-
     // Sending Mail
     emailjs.sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID,
       import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-      form.current,
+      '#contactForm',
       import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
     .then(function(response) {
       console.log('SUCCESS!', response.status, response.text);
@@ -57,7 +57,7 @@ export default function Contact() {
         <div className="row d-flex justify-content-center pt-3">
           <div className="col-lg-5">
             <Fade direction="up" triggerOnce={true}>
-              <form className="vg-contact-form" onSubmit={handleSubmit} ref={form}>
+              <form className="vg-contact-form" ref={form} onSubmit={handleSubmit} id="contactForm">
                 <div className="form-row justify-content-center">
                   <FormPopup data={popup} close={closePopup} />
                   <div className="col-6 mt-3">
