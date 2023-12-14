@@ -61,11 +61,11 @@ export default function Contact() {
                 <div className="form-row justify-content-center">
                   <div className="col-6 mt-3">
                     <input className="form-control" type="text" name="Prenom" placeholder="Prenom"
-                      onChange={handleChange} value={formData.Name} required />
+                      onChange={handleChange} value={formData.Prenom} required />
                   </div>
                   <div className="col-6 mt-3">
                     <input className="form-control" type="text" name="Nom" placeholder="Nom"
-                      onChange={handleChange} value={formData.Name} required />
+                      onChange={handleChange} value={formData.Nom} required />
                   </div>
                   <div className="col-12 mt-3">
                     <input className="form-control" type="text" name="Email" placeholder="Email"
