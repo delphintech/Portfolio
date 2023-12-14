@@ -55,7 +55,7 @@ export default function Contact() {
           <h1 className="text-center fw-normal">Me contacter</h1>
         </Fade>
         <div className="row d-flex justify-content-center pt-3">
-          <div className="col-lg-5">
+          <div className="col-lg-7">
             <Fade direction="up" triggerOnce={true}>
               <form className="vg-contact-form" ref={form} onSubmit={handleSubmit} id="contactForm">
                 <div className="form-row justify-content-center">
