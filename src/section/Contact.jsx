@@ -4,7 +4,7 @@ import FormPopup from '../components/FormPopup'
 import { Fade } from "react-awesome-reveal";
 
 export default function Contact() {
-  const [formData, setFormData] = React.useState({ Name: "", Email: "", Subject: "", Message: "" })
+  const [formData, setFormData] = React.useState({ Prenom: "", Nom: "", Email: "", Subject: "", Message: "" })
   const [ popup, setPopup ] = React.useState({ show: false, type: "", text:"" })
 
   function closePopup() {
@@ -35,7 +35,7 @@ export default function Contact() {
     .then(function(response) {
       console.log('SUCCESS!', response.status, response.text);
       // Cleaning Form
-      setFormData({ Name: "", Email: "", Subject: "", Message: "" })
+      setFormData({ Prenom: "", Nom: "", Email: "", Subject: "", Message: "" })
       // Success Alert
       setPopup({ show: true, type: 'success', text: <p>Merci pour votre message !</p> })
     }, function(error) {
@@ -60,10 +60,14 @@ export default function Contact() {
               <form className="vg-contact-form" ref={form} onSubmit={handleSubmit} id="contactForm">
                 <div className="form-row justify-content-center">
                   <div className="col-6 mt-3">
-                    <input className="form-control" type="text" name="Name" placeholder="Nom"
+                    <input className="form-control" type="text" name="Prenom" placeholder="Prenom"
                       onChange={handleChange} value={formData.Name} required />
                   </div>
                   <div className="col-6 mt-3">
+                    <input className="form-control" type="text" name="Nom" placeholder="Nom"
+                      onChange={handleChange} value={formData.Name} required />
+                  </div>
+                  <div className="col-12 mt-3">
                     <input className="form-control" type="text" name="Email" placeholder="Email"
                       onChange={handleChange} value={formData.Email} required />
                   </div>
@@ -71,9 +75,7 @@ export default function Contact() {
                     <input className="form-control" type="text" name="Subject" placeholder="Objet"
                       onChange={handleChange} value={formData.Subject} required />
                   </div>
-
-          <FormPopup data={popup} close={closePopup} />
-
+                  <FormPopup data={popup} close={closePopup} />
                   <div className="col-12 mt-3">
                     <textarea className="form-control" name="Message" rows="6" placeholder="Votre message.."
                       onChange={handleChange} value={formData.Message} required ></textarea>
