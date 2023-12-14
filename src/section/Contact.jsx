@@ -59,7 +59,6 @@ export default function Contact() {
             <Fade direction="up" triggerOnce={true}>
               <form className="vg-contact-form" ref={form} onSubmit={handleSubmit} id="contactForm">
                 <div className="form-row justify-content-center">
-                  <FormPopup data={popup} close={closePopup} />
                   <div className="col-6 mt-3">
                     <input className="form-control" type="text" name="Name" placeholder="Nom"
                       onChange={handleChange} value={formData.Name} required />
@@ -72,6 +71,9 @@ export default function Contact() {
                     <input className="form-control" type="text" name="Subject" placeholder="Objet"
                       onChange={handleChange} value={formData.Subject} required />
                   </div>
+
+          <FormPopup data={popup} close={closePopup} />
+
                   <div className="col-12 mt-3">
                     <textarea className="form-control" name="Message" rows="6" placeholder="Votre message.."
                       onChange={handleChange} value={formData.Message} required ></textarea>
