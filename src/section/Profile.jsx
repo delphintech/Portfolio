@@ -1,5 +1,5 @@
 import portrait from "../assets/img/Portrait-2023.jpg"
-import CV from "../assets/Delphine Abouab - CV 2023 FR.pdf"
+import CV from "../assets/CV Delphine Abouab - Ingenieur développement logiciel.pdf"
 
 import { Fade } from "react-awesome-reveal";
 
@@ -23,10 +23,10 @@ export default function Profile() {
           <div className="col-lg-6 offset-lg-1">
             <Fade direction="right" triggerOnce={true}>
               <h1 className="fw-light">Delphine Abouab</h1>
-              <h5 className="fg-theme mb-3">Développeuse web Full Stack</h5>
+              <h5 className="fg-theme mb-3">Software engineer</h5>
               <p className="text-muted">
                 <span>Curieuse, dynamique et dotée d&apos;une forte capacité d&apos;abstraction et de logique, j&apos;ai soif
-                de consolider mes compétences techniques acquises pendant ma formation de développement web à Le Wagon.</span><br/><br/>
+                de consolider mes compétences techniques acquises pendant ma formation d'architecture en technologie du numérique, reconnue RNCP 7, à <strong>42 Paris</strong></span><br/><br/>
                 <span>Ma grande adaptabilité saura me faire monter rapidement en compétence dans ma future carrière de développeuse.</span></p>
               {/* <ul className="theme-list">
                 <li><b>From:</b> Chatou, France</li>
@@ -35,7 +35,7 @@ export default function Profile() {
                 <li><b>Gender:</b> Female</li>
               </ul> */}
               <div className="centered">
-                <a href={CV} download="Delphine Abouab - CV 2023">
+                <a href={CV} download="CV Delphine Abouab - Ingenieur développement logiciel">
                   <button className="btn btn-theme-outline" >
                     <i className="fa-solid fa-file-arrow-down pr-1"></i> Mon CV
                   </button>

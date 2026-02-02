@@ -19,7 +19,7 @@ export default function Skills() {
                 </div>
                 <div className="caption">
                   <h4 className="fg-theme">Programmation</h4>
-                  <p>Ruby on Rails, ReactJS</p>
+                  <p>C · C++ · Python · JavaScript · TypeScript · Ruby · Assembly</p>
                 </div>
               </div>
             </div>
@@ -30,7 +30,7 @@ export default function Skills() {
                 </div>
                 <div className="caption">
                   <h4 className="fg-theme">Web</h4>
-                  <p>JavaScript, HTML, CSS</p>
+                  <p>Rails · Fastify · Node.js · React · WebSocket · PostgreSQL · SQLite · Tailwind · Bootstrap</p>
                 </div>
               </div>
             </div>
@@ -41,18 +41,18 @@ export default function Skills() {
                 </div>
                 <div className="caption">
                   <h4 className="fg-theme">Tools</h4>
-                  <p>Visual Studio, GitHub, Bootstrap, Heroku, Figma</p>
+                  <p>Git · Docker · VirtualBox · VSCode · Linux · gdb/lldb</p>
                 </div>
               </div>
             </div>
             <div className="col-md-6 col-lg-4 col-xl-3">
               <div className="card card-service">
                 <div className="icon">
-                  <i className="fa-solid fa-database"></i>
+                  <i className="fa-solid fa-user"></i>
                 </div>
                 <div className="caption">
-                  <h4 className="fg-theme">DataBase</h4>
-                  <p>MySQL, PostGreSQL</p>
+                  <h4 className="fg-theme">Soft skills</h4>
+                  <p>Communication  · Dynamisme  · Adaptabilité  · Esprit d'équipe</p>
                 </div>
               </div>
             </div>

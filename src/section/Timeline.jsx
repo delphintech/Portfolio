@@ -15,11 +15,19 @@ export default function Timeline() {
             <h2 className="fw-normal">Formations</h2>
             <ul className="timeline mt-4 pr-md-5">
               <li>
+                <div className="title">2024 - 2027</div>
+                <div className="details">
+                  <h5>Expert en architecture informatique</h5>
+                  <small className="fg-theme">École 42, Paris</small>
+                  <p><em>RNCP 7</em><br/>C, C++, Python, Algorithmes, Structures de données, DevOps, Projet collaboratif</p>
+                </div>
+              </li>
+              <li>
                 <div className="title">2023</div>
                 <div className="details">
                   <h5>Certification de Concepteur(rice)- développeur(se) d&apos;applications web</h5>
                   <small className="fg-theme">Le Wagon, Paris</small>
-                  <p><em>RNCP au niveau 6</em><br/>Ruby on rails, JS, CSS, HTML, SQL</p>
+                  <p><em>RNCP 6</em><br/>Ruby on rails, JS, CSS, HTML, SQL</p>
                 </div>
               </li>
               <li>
@@ -46,7 +54,7 @@ export default function Timeline() {
             <h2 className="fw-normal">Expériences</h2>
             <ul className="timeline mt-4 pr-md-5">
               <li>
-                <div className="title">2023 - Actuel</div>
+                <div className="title">2023 - 2024</div>
                 <div className="details">
                   <h5>Professeure assistante</h5>
                   <small className="fg-theme">Le Wagon, Paris</small>
