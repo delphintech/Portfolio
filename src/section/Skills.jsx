@@ -19,7 +19,7 @@ export default function Skills() {
                 </div>
                 <div className="caption">
                   <h4 className="fg-theme">Programmation</h4>
-                  <p>C · C++ · Python · JavaScript · TypeScript · Ruby · Assembly</p>
+                  <p>C · C++ · Python · JavaScript · TypeScript · Assembly · Ruby</p>
                 </div>
               </div>
             </div>
@@ -30,7 +30,7 @@ export default function Skills() {
                 </div>
                 <div className="caption">
                   <h4 className="fg-theme">Web</h4>
-                  <p>Rails · Fastify · Node.js · React · WebSocket · PostgreSQL · SQLite · Tailwind · Bootstrap</p>
+                  <p>Node.js · React · Fastify · Rails · WebSocket · PostgreSQL · SQLite · Tailwind · Bootstrap</p>
                 </div>
               </div>
             </div>

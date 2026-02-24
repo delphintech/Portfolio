@@ -1,5 +1,5 @@
 import portrait from "../assets/img/Portrait-2023.jpg"
-import CV from "../assets/CV Delphine Abouab - Ingenieur développement logiciel.pdf"
+import CV from "../assets/CV Delphine Abouab.pdf"
 
 import { Fade } from "react-awesome-reveal";
 
