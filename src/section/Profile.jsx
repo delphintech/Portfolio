@@ -23,7 +23,7 @@ export default function Profile() {
           <div className="col-lg-6 offset-lg-1">
             <Fade direction="right" triggerOnce={true}>
               <h1 className="fw-light">Delphine Abouab</h1>
-              <h5 className="fg-theme mb-3">Software engineer</h5>
+              <h5 className="text-main-1 mb-3">Software engineer</h5>
               <p className="text-muted">
                 <span>Curieuse, dynamique et dotée d&apos;une forte capacité d&apos;abstraction et de logique, j&apos;ai soif
                 de consolider mes compétences techniques acquises pendant ma formation d'architecture en technologie du numérique, reconnue RNCP 7, à <strong>42 Paris</strong></span><br/><br/>

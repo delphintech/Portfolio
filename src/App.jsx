@@ -15,12 +15,12 @@ function App() {
 
   return (
     <>
-      <div className="vg-page page-home" id="home" >
+      <div className="page-home" id="home" >
         <Navbar />
         <Landing />
       </div>
 
-    <div className="vg-page">
+    <div className="vg-relative block w-full overflow-hidden py-20">
               <section className="tab-section">
           <div className="d-flex justify-content-center mb-4">
             <ul className="nav nav-pills gap-2" role="tablist" aria-label="Projects tabs">
@@ -73,7 +73,7 @@ function App() {
         </section>
       </div>
 
-      {/* <div className="vg-page">
+      {/* <div className="relative block w-full overflow-hidden py-20">
         <div id="about">
           <Profile />
           <Skills />

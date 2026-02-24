@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [
     react(),
-    tailwind()
+    tailwindcss()
   ],
   assetsInclude: ['**/*.jpg', '**/*.png', '**/*.svg', '**/*.gif'],
   base: "/"

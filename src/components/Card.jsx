@@ -16,7 +16,7 @@ export default function Card({ project, toggleDetails }) {
         <div className="img-place" onClick={handleClick} >
           <img src={data.img} alt="" />
           <div className="img-caption">
-            <h5 className="fg-theme">{data.title}</h5>
+            <h5 className="text-main-1">{data.title}</h5>
             <p>{data.text}</p>
           </div>
         </div>

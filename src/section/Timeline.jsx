@@ -18,7 +18,7 @@ export default function Timeline() {
                 <div className="title">2024 - 2027</div>
                 <div className="details">
                   <h5>Expert en architecture informatique</h5>
-                  <small className="fg-theme">École 42, Paris</small>
+                  <small className="text-main-1">École 42, Paris</small>
                   <p><em>RNCP 7</em><br/>C, C++, Python, Algorithmes, Structures de données, DevOps, Projet collaboratif</p>
                 </div>
               </li>
@@ -26,7 +26,7 @@ export default function Timeline() {
                 <div className="title">2023</div>
                 <div className="details">
                   <h5>Certification de Concepteur(rice)- développeur(se) d&apos;applications web</h5>
-                  <small className="fg-theme">Le Wagon, Paris</small>
+                  <small className="text-main-1">Le Wagon, Paris</small>
                   <p><em>RNCP 6</em><br/>Ruby on rails, JS, CSS, HTML, SQL</p>
                 </div>
               </li>
@@ -34,7 +34,7 @@ export default function Timeline() {
                 <div className="title">2015 - 2016</div>
                 <div className="details">
                   <h5>Licence professionnelle Technico-commerciale</h5>
-                  <small className="fg-theme">IUT Cachan</small>
+                  <small className="text-main-1">IUT Cachan</small>
                   <p><em>Major de promotion</em><br/>. Alternance chez les Régulateurs Georgin</p>
                 </div>
               </li>
@@ -42,7 +42,7 @@ export default function Timeline() {
                 <div className="title">2010 - 2014</div>
                 <div className="details">
                   <h5>Ecole d&apos;Ingénieur généraliste</h5>
-                  <small className="fg-theme">HEI, Lille</small>
+                  <small className="text-main-1">HEI, Lille</small>
                   <p>Validation équivalent licence 3</p>
                 </div>
               </li>
@@ -57,7 +57,7 @@ export default function Timeline() {
                 <div className="title">2023 - 2024</div>
                 <div className="details">
                   <h5>Professeure assistante</h5>
-                  <small className="fg-theme">Le Wagon, Paris</small>
+                  <small className="text-main-1">Le Wagon, Paris</small>
                   <p>Accompagnement des élèves sur la résolution d&apos;exercices<br/>Explication des cours</p>
                 </div>
               </li>
@@ -65,7 +65,7 @@ export default function Timeline() {
                 <div className="title">2021 - 2022</div>
                 <div className="details">
                   <h5>Commerciale & Customer Success manager</h5>
-                  <small className="fg-theme">Plato.immo</small>
+                  <small className="text-main-1">Plato.immo</small>
                   <p><em>Start-up achetée par Aviv group en mai 2022</em>
                   <br/>Prospection téléphonique, démonstrations du produit, suivi client, articles de presse …
                   <br/>Installations, formations, création d&apos;un product tour(Userpilot), support client (Intercom).</p>
@@ -75,7 +75,7 @@ export default function Timeline() {
                 <div className="title">2018 - 2021</div>
                 <div className="details">
                   <h5>Technico-commerciale sédentaire</h5>
-                  <small className="fg-theme">Flowserve, Villebon-sur-Yvette</small>
+                  <small className="text-main-1">Flowserve, Villebon-sur-Yvette</small>
                   <p>Création d&apos;outils en VBA Excel pour optimiser certaines tâches quotidiennes
                   <br/>Accompagnement technique, création d&apos;offres et vérification des commandes pour le matériel de trois usines différentes sur plusieurs systèmes (SAP, Excel, interface extranet...)
                   </p>

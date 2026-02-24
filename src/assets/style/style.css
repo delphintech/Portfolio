@@ -1,3 +1,4 @@
+@import '../fonts/font.css';
 @import "tailwindcss";
 
 @theme {
@@ -17,6 +18,18 @@
 	/* Fonts */
 	--font-lta: 'LTAzer', 'sans-serif';
 	--font-sans: "Inter", system-ui, sans-serif;
+}
+
+@layer components {
+  .page-home {
+    @apply relative block w-full overflow-hidden py-20 h-175 z-99 bg-cover bg-center;
+    background-image: url('/bg-delphintech.jpg');
+  }
+
+  .page-home::before {
+    content: '';
+    @apply absolute inset-0 bg-dark-1/80 -z-10;
+  }
 }
 
 /* mb-6px => mb-1.5

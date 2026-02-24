@@ -18,7 +18,7 @@ export default function Skills() {
                   <i className="fa-solid fa-code"></i>
                 </div>
                 <div className="caption">
-                  <h4 className="fg-theme">Programmation</h4>
+                  <h4 className="text-main-1">Programmation</h4>
                   <p>C · C++ · Python · JavaScript · TypeScript · Assembly · Ruby</p>
                 </div>
               </div>
@@ -29,7 +29,7 @@ export default function Skills() {
                   <i className="fa-solid fa-laptop-code"></i>
                 </div>
                 <div className="caption">
-                  <h4 className="fg-theme">Web</h4>
+                  <h4 className="text-main-1">Web</h4>
                   <p>Node.js · React · Fastify · Rails · WebSocket · PostgreSQL · SQLite · Tailwind · Bootstrap</p>
                 </div>
               </div>
@@ -40,7 +40,7 @@ export default function Skills() {
                   <i className="fa-solid fa-computer-mouse"></i>
                 </div>
                 <div className="caption">
-                  <h4 className="fg-theme">Tools</h4>
+                  <h4 className="text-main-1">Tools</h4>
                   <p>Git · Docker · VirtualBox · VSCode · Linux · gdb/lldb</p>
                 </div>
               </div>
@@ -51,7 +51,7 @@ export default function Skills() {
                   <i className="fa-solid fa-user"></i>
                 </div>
                 <div className="caption">
-                  <h4 className="fg-theme">Soft skills</h4>
+                  <h4 className="text-main-1">Soft skills</h4>
                   <p>Communication  · Dynamisme  · Adaptabilité  · Esprit d'équipe</p>
                 </div>
               </div>
