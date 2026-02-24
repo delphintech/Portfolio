@@ -1,23 +1,39 @@
 export default function Footer() {
   return (
-     <div className="vg-footer">
-      <h1 className="text-center">DelphinTech</h1>
-      <div className="container">
-        <div className="row d-flex justify-content-around">
+     <div className="relative block m-0 py-12 bg-dark-1 text-back-2">
+      <h1 className="text-center font-lta">DelphinTech</h1>
+
+      <div className="container mx-auto px-4">
+        <div className="row flex flex-wrap justify-around">
           <div className="col-md-6 col-lg-3 py-3">
             <div >
               <p>Réseaux</p>
-              <hr className="divider" />
-              <ul className="list-unstyled">
-                <li><a href="https://www.linkedin.com/in/delphine-abouab/"  rel="noreferrer" target="_blank">Linkedin</a></li>
-                <li><a href="https://github.com/delphintech" rel="noreferrer" target="_blank">Github</a></li>
+              <hr className="block my-4 -mt-5 max-w-38 border-b-2 border-dashed border-back-2" />
+              <ul className="list-none pl-0">
+                <li><a 
+                      href="https://www.linkedin.com/in/delphine-abouab/"  
+                      rel="noreferrer" 
+                      target="_blank"
+                      className="mb-1.5 text-xl text-white"
+                      >
+                        Linkedin
+                  </a></li>
+                <li><a 
+                  href="https://github.com/delphintech" 
+                  rel="noreferrer" 
+                  target="_blank"
+                  className="mb-1.5 text-xl text-white"
+                  >
+                    Github
+                  </a></li>
               </ul>
             </div>
           </div>
+          {/* here */}
           <div className="col-md-6 col-lg-3 py-3">
             <div>
               <p>Contact</p>
-              <hr className="divider" />
+              <hr className="block my-4 -mt-5 max-w-38 border-b-2 border-dashed border-back-2" />
               <ul className="list-unstyled">
                 <li><a href="mailto:delphine.abouab@outlook.fr">delphine.abouab@outlook.fr</a></li>
                 <li><a href="tel:+33679327751">+33 6 79 32 77 51</a></li>
