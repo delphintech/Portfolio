@@ -1,5 +1,6 @@
 @import '../fonts/font.css';
 @import "tailwindcss";
+@import 'tailwind-animations';
 
 @theme {
 	/* Colors */
