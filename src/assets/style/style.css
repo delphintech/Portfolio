@@ -16,8 +16,8 @@
 	--color-back-3: #ede9d0;
 
 	/* Fonts */
-	--font-lta: 'LTAzer', 'sans-serif';
-	--font-sans: "Inter", system-ui, sans-serif;
+	--font-lta: 'LTAzer', serif;
+	--font-sans: "Inter", system-ui, serif;
 }
 
 @layer components {
@@ -28,7 +28,7 @@
 
   .page-home::before {
     content: '';
-    @apply absolute inset-0 bg-dark-1/80 -z-10;
+    @apply absolute inset-0 bg-dark-1/70 -z-10;
   }
 }
 

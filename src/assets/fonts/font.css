@@ -1,6 +1,13 @@
+/* @font-face {
+  font-family: "LTAzer";
+  src: url("./LTAzer.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+} */
+
+
 @font-face {
   font-family: 'LTAzer';
   src: url('./29LTAzer.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
 }
