@@ -22,14 +22,18 @@
 }
 
 @layer components {
-  .page-home {
-    @apply relative block w-full overflow-hidden py-20 h-175 z-99 bg-cover bg-center;
+  .landing {
+    @apply relative h-screen w-full z-10 overflow-hidden py-20 bg-cover bg-center flex flex-col flex-wrap justify-center items-center text-back-3 text-shadow-xs text-center;
     background-image: url('/bg-delphintech.jpg');
   }
 
-  .page-home::before {
+  .landing::before {
     content: '';
     @apply absolute inset-0 bg-dark-1/70 -z-10;
+  }
+
+  .badge {
+	@apply mx-auto w-fit font-bold px-6 py-4 bg-back-2/20 text-red-600 text-base rounded-full drop-shadow-md
   }
 }
 

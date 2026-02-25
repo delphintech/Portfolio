@@ -5,17 +5,17 @@ import { Fade } from "react-awesome-reveal";
 
 export default function Profile() {
   return (
-    <div className="page-about">
+    <>
       <div className="text-center">
         <Fade direction="down" triggerOnce={true}>
-          <div className="badge badge-subhead">A propos</div>
+          <div className="badge">A propos</div>
         </Fade>
       </div>
       <div className="container py-5">
         <div className="row">
-          <div className="col-lg-4 py-3 picture">
+          <div className="col-lg-4 py-3 flex items-cente">
             <Fade direction="up" triggerOnce={true}>
-              <div className="img-place">
+              <div className="relative before:content-[''] before:absolute before:-top-5 before:-right-9 before:w-full before:h-full before:border-[5px] before:border-main-1 before:-z-10">
                 <img src={portrait} alt="" />
               </div>
             </Fade>
@@ -23,7 +23,7 @@ export default function Profile() {
           <div className="col-lg-6 offset-lg-1">
             <Fade direction="right" triggerOnce={true}>
               <h1 className="fw-light">Delphine Abouab</h1>
-              <h5 className="text-main-1 mb-3">Software engineer</h5>
+              <h5 className="fg-theme mb-3">Software engineer</h5>
               <p className="text-muted">
                 <span>Curieuse, dynamique et dotée d&apos;une forte capacité d&apos;abstraction et de logique, j&apos;ai soif
                 de consolider mes compétences techniques acquises pendant ma formation d'architecture en technologie du numérique, reconnue RNCP 7, à <strong>42 Paris</strong></span><br/><br/>
@@ -45,6 +45,6 @@ export default function Profile() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
